@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "Nexgadget is a modern e-commerce web application engineered to deliver seamless online shopping experiences for consumer electronics and tech accessories",
   "homepage": "https://github.com/mastermasso/NexGadget#readme",
+  "main": "index.js",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/mastermasso/NexGadget/issues"
   },
@@ -13,14 +15,15 @@
   "license": "ISC",
   "author": "Techmeister/Master Masso",
   "type": "module",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "start": "node src/index.js",
-    "dev": "nodemon src/index.js"
+    "start": "node backend src/index.js",
+    "dev": "nodemon backend src/index.js"
   },
   "dependencies": {
     "dotenv": "^18.0.2",
     "express": "^5.2.1",
-    "mongoose": "^9.10.1"
+    "mongoose": "^9.10.2",
+    "nodemon": "^3.1.14"
   }
 }
